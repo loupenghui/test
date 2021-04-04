@@ -1,0 +1,152 @@
+2020-03-13 14:04:52,890 [main] INFO  c.h.t.restfulwebservice.TestRestfulWSApplication:48 - Starting TestRestfulWSApplication on louph with PID 935884 (D:\dev\IdeaProjects\test\test-restfulwebservice\target\classes started by Administrator in D:\dev\IdeaProjects\test\test-restfulwebservice)
+2020-03-13 14:04:52,892 [main] INFO  c.h.t.restfulwebservice.TestRestfulWSApplication:593 - No active profile set, falling back to default profiles: default
+2020-03-13 14:04:52,960 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext:582 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@27eedb64: startup date [Fri Mar 13 14:04:52 CST 2020]; root of context hierarchy
+2020-03-13 14:04:53,140 [background-preinit] INFO  org.hibernate.validator.internal.util.Version:30 - HV000001: Hibernate Validator 5.3.6.Final
+2020-03-13 14:04:54,061 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 9095 (http)
+2020-03-13 14:04:54,073 [main] INFO  org.apache.catalina.core.StandardService:180 - Starting service [Tomcat]
+2020-03-13 14:04:54,076 [main] INFO  org.apache.catalina.core.StandardEngine:180 - Starting Servlet Engine: Apache Tomcat/8.5.27
+2020-03-13 14:04:54,284 [localhost-startStop-1] INFO  org.apache.jasper.servlet.TldScanner:180 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-03-13 14:04:54,288 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]:180 - Initializing Spring embedded WebApplicationContext
+2020-03-13 14:04:54,288 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader:276 - Root WebApplicationContext: initialization completed in 1328 ms
+2020-03-13 14:04:54,438 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2020-03-13 14:04:54,444 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-03-13 14:04:54,444 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-03-13 14:04:54,444 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-03-13 14:04:54,445 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2020-03-13 14:04:54,467 [main] WARN  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor:440 - Autowired annotation is not supported on static fields: private static java.lang.String com.hzsun.test.restfulwebservice.TestRestfulWSApplication.path
+2020-03-13 14:04:54,725 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@27eedb64: startup date [Fri Mar 13 14:04:52 CST 2020]; root of context hierarchy
+2020-03-13 14:04:54,772 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/greeting]}" onto public com.hzsun.test.restfulwebservice.bean.Greeting com.hzsun.test.restfulwebservice.controller.RestfulController.greeting(java.lang.String)
+2020-03-13 14:04:54,776 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-03-13 14:04:54,776 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-03-13 14:04:54,796 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping:354 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-13 14:04:54,797 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping:354 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-13 14:04:54,829 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping:354 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-13 14:04:55,123 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2020-03-13 14:04:55,150 [main] INFO  org.apache.coyote.http11.Http11NioProtocol:180 - Initializing ProtocolHandler ["http-nio-0.0.0.0-9095"]
+2020-03-13 14:04:55,161 [main] INFO  org.apache.coyote.http11.Http11NioProtocol:180 - Starting ProtocolHandler ["http-nio-0.0.0.0-9095"]
+2020-03-13 14:04:55,176 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool:180 - Using a shared selector for servlet write/read
+2020-03-13 14:04:55,216 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer:201 - Tomcat started on port(s): 9095 (http)
+2020-03-13 14:04:55,220 [main] INFO  c.h.t.restfulwebservice.TestRestfulWSApplication:57 - Started TestRestfulWSApplication in 2.785 seconds (JVM running for 3.493)
+2020-03-13 14:05:54,526 [main] INFO  c.h.t.restfulwebservice.TestRestfulWSApplication:48 - Starting TestRestfulWSApplication on louph with PID 949144 (D:\dev\IdeaProjects\test\test-restfulwebservice\target\classes started by Administrator in D:\dev\IdeaProjects\test\test-restfulwebservice)
+2020-03-13 14:05:54,528 [main] INFO  c.h.t.restfulwebservice.TestRestfulWSApplication:593 - No active profile set, falling back to default profiles: default
+2020-03-13 14:05:54,594 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext:582 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@27eedb64: startup date [Fri Mar 13 14:05:54 CST 2020]; root of context hierarchy
+2020-03-13 14:05:54,839 [background-preinit] INFO  org.hibernate.validator.internal.util.Version:30 - HV000001: Hibernate Validator 5.3.6.Final
+2020-03-13 14:05:55,638 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 9095 (http)
+2020-03-13 14:05:55,646 [main] INFO  org.apache.catalina.core.StandardService:180 - Starting service [Tomcat]
+2020-03-13 14:05:55,647 [main] INFO  org.apache.catalina.core.StandardEngine:180 - Starting Servlet Engine: Apache Tomcat/8.5.27
+2020-03-13 14:05:55,846 [localhost-startStop-1] INFO  org.apache.jasper.servlet.TldScanner:180 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-03-13 14:05:55,851 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]:180 - Initializing Spring embedded WebApplicationContext
+2020-03-13 14:05:55,851 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader:276 - Root WebApplicationContext: initialization completed in 1258 ms
+2020-03-13 14:05:56,019 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2020-03-13 14:05:56,023 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-03-13 14:05:56,024 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-03-13 14:05:56,024 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-03-13 14:05:56,025 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2020-03-13 14:05:56,061 [main] WARN  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor:440 - Autowired annotation is not supported on static fields: private static java.lang.String com.hzsun.test.restfulwebservice.controller.RestfulController.path
+2020-03-13 14:05:56,318 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@27eedb64: startup date [Fri Mar 13 14:05:54 CST 2020]; root of context hierarchy
+2020-03-13 14:05:56,361 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/greeting]}" onto public com.hzsun.test.restfulwebservice.bean.Greeting com.hzsun.test.restfulwebservice.controller.RestfulController.greeting(java.lang.String)
+2020-03-13 14:05:56,363 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-03-13 14:05:56,363 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-03-13 14:05:56,386 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping:354 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-13 14:05:56,386 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping:354 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-13 14:05:56,422 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping:354 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-13 14:05:56,596 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2020-03-13 14:05:56,612 [main] INFO  org.apache.coyote.http11.Http11NioProtocol:180 - Initializing ProtocolHandler ["http-nio-0.0.0.0-9095"]
+2020-03-13 14:05:56,616 [main] INFO  org.apache.coyote.http11.Http11NioProtocol:180 - Starting ProtocolHandler ["http-nio-0.0.0.0-9095"]
+2020-03-13 14:05:56,626 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool:180 - Using a shared selector for servlet write/read
+2020-03-13 14:05:56,651 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer:201 - Tomcat started on port(s): 9095 (http)
+2020-03-13 14:05:56,655 [main] INFO  c.h.t.restfulwebservice.TestRestfulWSApplication:57 - Started TestRestfulWSApplication in 2.606 seconds (JVM running for 3.34)
+2020-03-13 14:06:20,708 [http-nio-0.0.0.0-9095-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]:180 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-03-13 14:06:20,708 [http-nio-0.0.0.0-9095-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2020-03-13 14:06:20,729 [http-nio-0.0.0.0-9095-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 21 ms
+2020-03-13 14:07:33,347 [main] INFO  c.h.t.restfulwebservice.TestRestfulWSApplication:48 - Starting TestRestfulWSApplication on louph with PID 946884 (D:\dev\IdeaProjects\test\test-restfulwebservice\target\classes started by Administrator in D:\dev\IdeaProjects\test\test-restfulwebservice)
+2020-03-13 14:07:33,349 [main] INFO  c.h.t.restfulwebservice.TestRestfulWSApplication:593 - No active profile set, falling back to default profiles: default
+2020-03-13 14:07:33,407 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext:582 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@42b02722: startup date [Fri Mar 13 14:07:33 CST 2020]; root of context hierarchy
+2020-03-13 14:07:33,650 [background-preinit] INFO  org.hibernate.validator.internal.util.Version:30 - HV000001: Hibernate Validator 5.3.6.Final
+2020-03-13 14:07:34,691 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 9095 (http)
+2020-03-13 14:07:34,699 [main] INFO  org.apache.catalina.core.StandardService:180 - Starting service [Tomcat]
+2020-03-13 14:07:34,700 [main] INFO  org.apache.catalina.core.StandardEngine:180 - Starting Servlet Engine: Apache Tomcat/8.5.27
+2020-03-13 14:07:34,910 [localhost-startStop-1] INFO  org.apache.jasper.servlet.TldScanner:180 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-03-13 14:07:34,914 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]:180 - Initializing Spring embedded WebApplicationContext
+2020-03-13 14:07:34,914 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader:276 - Root WebApplicationContext: initialization completed in 1507 ms
+2020-03-13 14:07:35,054 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2020-03-13 14:07:35,057 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-03-13 14:07:35,058 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-03-13 14:07:35,058 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-03-13 14:07:35,058 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2020-03-13 14:07:35,089 [main] WARN  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor:440 - Autowired annotation is not supported on static fields: private static java.lang.String com.hzsun.test.restfulwebservice.controller.RestfulController.path
+2020-03-13 14:07:35,401 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@42b02722: startup date [Fri Mar 13 14:07:33 CST 2020]; root of context hierarchy
+2020-03-13 14:07:35,469 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/greeting]}" onto public com.hzsun.test.restfulwebservice.bean.Greeting com.hzsun.test.restfulwebservice.controller.RestfulController.greeting(java.lang.String)
+2020-03-13 14:07:35,474 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-03-13 14:07:35,475 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-03-13 14:07:35,535 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping:354 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-13 14:07:35,536 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping:354 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-13 14:07:35,589 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping:354 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-13 14:07:35,840 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2020-03-13 14:07:35,859 [main] INFO  org.apache.coyote.http11.Http11NioProtocol:180 - Initializing ProtocolHandler ["http-nio-0.0.0.0-9095"]
+2020-03-13 14:07:35,864 [main] INFO  org.apache.coyote.http11.Http11NioProtocol:180 - Starting ProtocolHandler ["http-nio-0.0.0.0-9095"]
+2020-03-13 14:07:35,874 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool:180 - Using a shared selector for servlet write/read
+2020-03-13 14:07:35,903 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer:201 - Tomcat started on port(s): 9095 (http)
+2020-03-13 14:07:35,909 [main] INFO  c.h.t.restfulwebservice.TestRestfulWSApplication:57 - Started TestRestfulWSApplication in 3.046 seconds (JVM running for 3.763)
+2020-03-13 14:07:37,768 [http-nio-0.0.0.0-9095-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]:180 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-03-13 14:07:37,769 [http-nio-0.0.0.0-9095-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2020-03-13 14:07:37,790 [http-nio-0.0.0.0-9095-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 21 ms
+2020-03-13 14:08:11,931 [main] INFO  c.h.t.restfulwebservice.TestRestfulWSApplication:48 - Starting TestRestfulWSApplication on louph with PID 948172 (D:\dev\IdeaProjects\test\test-restfulwebservice\target\classes started by Administrator in D:\dev\IdeaProjects\test\test-restfulwebservice)
+2020-03-13 14:08:11,933 [main] INFO  c.h.t.restfulwebservice.TestRestfulWSApplication:593 - No active profile set, falling back to default profiles: default
+2020-03-13 14:08:11,987 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext:582 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@27eedb64: startup date [Fri Mar 13 14:08:11 CST 2020]; root of context hierarchy
+2020-03-13 14:08:12,172 [background-preinit] INFO  org.hibernate.validator.internal.util.Version:30 - HV000001: Hibernate Validator 5.3.6.Final
+2020-03-13 14:08:12,939 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 9095 (http)
+2020-03-13 14:08:12,945 [main] INFO  org.apache.catalina.core.StandardService:180 - Starting service [Tomcat]
+2020-03-13 14:08:12,946 [main] INFO  org.apache.catalina.core.StandardEngine:180 - Starting Servlet Engine: Apache Tomcat/8.5.27
+2020-03-13 14:08:13,155 [localhost-startStop-1] INFO  org.apache.jasper.servlet.TldScanner:180 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-03-13 14:08:13,159 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]:180 - Initializing Spring embedded WebApplicationContext
+2020-03-13 14:08:13,160 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader:276 - Root WebApplicationContext: initialization completed in 1173 ms
+2020-03-13 14:08:13,296 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2020-03-13 14:08:13,300 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-03-13 14:08:13,301 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-03-13 14:08:13,301 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-03-13 14:08:13,301 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2020-03-13 14:08:13,609 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@27eedb64: startup date [Fri Mar 13 14:08:11 CST 2020]; root of context hierarchy
+2020-03-13 14:08:13,675 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/greeting]}" onto public com.hzsun.test.restfulwebservice.bean.Greeting com.hzsun.test.restfulwebservice.controller.RestfulController.greeting(java.lang.String)
+2020-03-13 14:08:13,678 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-03-13 14:08:13,678 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-03-13 14:08:13,704 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping:354 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-13 14:08:13,704 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping:354 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-13 14:08:13,741 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping:354 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-13 14:08:13,928 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2020-03-13 14:08:13,944 [main] INFO  org.apache.coyote.http11.Http11NioProtocol:180 - Initializing ProtocolHandler ["http-nio-0.0.0.0-9095"]
+2020-03-13 14:08:13,952 [main] INFO  org.apache.coyote.http11.Http11NioProtocol:180 - Starting ProtocolHandler ["http-nio-0.0.0.0-9095"]
+2020-03-13 14:08:13,964 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool:180 - Using a shared selector for servlet write/read
+2020-03-13 14:08:13,993 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer:201 - Tomcat started on port(s): 9095 (http)
+2020-03-13 14:08:14,000 [main] INFO  c.h.t.restfulwebservice.TestRestfulWSApplication:57 - Started TestRestfulWSApplication in 2.473 seconds (JVM running for 3.124)
+2020-03-13 14:08:17,691 [http-nio-0.0.0.0-9095-exec-3] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]:180 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-03-13 14:08:17,691 [http-nio-0.0.0.0-9095-exec-3] INFO  org.springframework.web.servlet.DispatcherServlet:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2020-03-13 14:08:17,712 [http-nio-0.0.0.0-9095-exec-3] INFO  org.springframework.web.servlet.DispatcherServlet:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 21 ms
+2020-03-13 14:09:56,068 [main] INFO  c.h.t.restfulwebservice.TestRestfulWSApplication:48 - Starting TestRestfulWSApplication on louph with PID 936724 (D:\dev\IdeaProjects\test\test-restfulwebservice\target\classes started by Administrator in D:\dev\IdeaProjects\test\test-restfulwebservice)
+2020-03-13 14:09:56,070 [main] INFO  c.h.t.restfulwebservice.TestRestfulWSApplication:593 - No active profile set, falling back to default profiles: default
+2020-03-13 14:09:56,149 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext:582 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@27eedb64: startup date [Fri Mar 13 14:09:56 CST 2020]; root of context hierarchy
+2020-03-13 14:09:56,369 [background-preinit] INFO  org.hibernate.validator.internal.util.Version:30 - HV000001: Hibernate Validator 5.3.6.Final
+2020-03-13 14:09:57,390 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 9095 (http)
+2020-03-13 14:09:57,399 [main] INFO  org.apache.catalina.core.StandardService:180 - Starting service [Tomcat]
+2020-03-13 14:09:57,399 [main] INFO  org.apache.catalina.core.StandardEngine:180 - Starting Servlet Engine: Apache Tomcat/8.5.27
+2020-03-13 14:09:57,594 [localhost-startStop-1] INFO  org.apache.jasper.servlet.TldScanner:180 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-03-13 14:09:57,599 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/]:180 - Initializing Spring embedded WebApplicationContext
+2020-03-13 14:09:57,599 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader:276 - Root WebApplicationContext: initialization completed in 1450 ms
+2020-03-13 14:09:57,733 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2020-03-13 14:09:57,738 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-03-13 14:09:57,738 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-03-13 14:09:57,739 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-03-13 14:09:57,739 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2020-03-13 14:09:58,025 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@27eedb64: startup date [Fri Mar 13 14:09:56 CST 2020]; root of context hierarchy
+2020-03-13 14:09:58,071 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/greeting]}" onto public com.hzsun.test.restfulwebservice.bean.Greeting com.hzsun.test.restfulwebservice.controller.RestfulController.greeting(java.lang.String)
+2020-03-13 14:09:58,073 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-03-13 14:09:58,074 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-03-13 14:09:58,097 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping:354 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-13 14:09:58,098 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping:354 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-13 14:09:58,127 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping:354 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-13 14:09:58,284 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2020-03-13 14:09:58,294 [main] INFO  org.apache.coyote.http11.Http11NioProtocol:180 - Initializing ProtocolHandler ["http-nio-0.0.0.0-9095"]
+2020-03-13 14:09:58,300 [main] INFO  org.apache.coyote.http11.Http11NioProtocol:180 - Starting ProtocolHandler ["http-nio-0.0.0.0-9095"]
+2020-03-13 14:09:58,309 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool:180 - Using a shared selector for servlet write/read
+2020-03-13 14:09:58,327 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer:201 - Tomcat started on port(s): 9095 (http)
+2020-03-13 14:09:58,330 [main] INFO  c.h.t.restfulwebservice.TestRestfulWSApplication:57 - Started TestRestfulWSApplication in 2.654 seconds (JVM running for 3.31)

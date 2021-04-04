@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>1.5.10.RELEASE</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+    <groupId>com.hzsun.test</groupId>
+    <artifactId>test</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <name>test</name>
+    <modules>
+        <module>test-jni</module>
+        <module>test-demo</module>
+        <module>test-dto</module>
+        <module>test-commons</module>
+        <module>test-cacheservice</module>
+        <module>test-service-api</module>
+        <module>test-ssoclient</module>
+        <module>test-log4j2</module>
+        <module>test-fastdfs</module>
+        <module>test-kafka</module>
+        <module>test-websocket</module>
+        <module>test-javarmi</module>
+        <module>test-client</module>
+        <module>test-hessianserver</module>
+        <module>test-restfulwebservice</module>
+        <module>test-quartz</module>
+    </modules>
+    <description>Demo project for Spring Boot</description>
+    <repositories>
+        <repository>
+            <id>local-nexus</id>
+            <url>http://172.16.5.108:8080/nexus/content/groups/public/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+    <distributionManagement>
+        <repository>
+            <id>nexus-releases</id>
+            <url>http://172.16.5.108:8080/nexus/content/repositories/releases</url>
+        </repository>
+    </distributionManagement>
+    <properties>
+        <hzsun.upp.version>0.0.1-SNAPSHOT</hzsun.upp.version>
+        <jdk.version>1.8</jdk.version>
+        <hzsun-commons.version>1.0.3</hzsun-commons.version>
+        <hzsun-shiro.version>0.0.4</hzsun-shiro.version>
+        <servlet.api.version>3.0.1</servlet.api.version>
+        <junit.version>4.12</junit.version>
+        <oracle.version>10.2.0.1.0</oracle.version>
+        <druid.version>1.0.22</druid.version>
+        <fastjson.version>1.2.12</fastjson.version>
+        <poi.version>3.13</poi.version>
+        <slf4j-api.version>1.7.21</slf4j-api.version>
+        <log4j.over.slf4j.version>1.7.21</log4j.over.slf4j.version>
+        <log4j.version>1.2.17</log4j.version>
+        <mybatis.version>3.2.8</mybatis.version>
+        <mybatis-spring.version>1.2.2</mybatis-spring.version>
+        <spring.version>4.3.5.RELEASE</spring.version>
+        <aspectjweaver.version>1.8.5</aspectjweaver.version>
+        <jstl.version>1.2</jstl.version>
+        <restlet.version>2.2.1</restlet.version>
+        <joda-time.version>2.9.9</joda-time.version>
+        <apache.commons.version>3.6</apache.commons.version>
+        <commons.beanutils>1.9.3</commons.beanutils>
+        <!-- spring boot应用 -->
+        <spring.boot.version>1.5.10.RELEASE</spring.boot.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <mysql.connector.version>6.0.6</mysql.connector.version>
+        <commons.dbcp2.version>2.2.0</commons.dbcp2.version>
+        <spring.boot.log4j.version>1.3.8.RELEASE</spring.boot.log4j.version>
+        <spring.boot.mybatis.version>1.3.1</spring.boot.mybatis.version>
+        <spring.boot.pagehelper.version>1.2.3</spring.boot.pagehelper.version>
+        <!-- Hessian 应用包 -->
+        <hessian.version>4.0.38</hessian.version>
+        <shrio.version>1.3.2</shrio.version>
+        <!-- java servlet -->
+        <javax.servlet.version>3.0.1</javax.servlet.version>
+        <javax.jstl.version>1.2</javax.jstl.version>
+        <tomcat.embed.version>9.0.4</tomcat.embed.version>
+        <aopalliance.version>1.0</aopalliance.version>
+        <aspectjweaver.version>1.8.5</aspectjweaver.version>
+        <alipay.version>0.0.2</alipay.version>
+        <commonsfileupload.version>1.3.1.</commonsfileupload.version>
+        <xy.version>2.0</xy.version>
+        <jpush.version>1.2.9</jpush.version>
+    </properties>
+
+    <dependencyManagement>
+    <dependencies>
+        <dependency>
+            <groupId>com.hzsun.test</groupId>
+            <artifactId>test-cacheservice</artifactId>
+            <version>${hzsun.upp.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.hzsun.test</groupId>
+            <artifactId>test-commons</artifactId>
+            <version>${hzsun.upp.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.hzsun.test</groupId>
+            <artifactId>test-service-api</artifactId>
+            <version>${hzsun.upp.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.hzsun.test</groupId>
+            <artifactId>test-dto</artifactId>
+            <version>${hzsun.upp.version}</version>
+        </dependency>
+
+        <!-- 支付宝接口 -->
+        <dependency>
+            <groupId>com.alipay.api</groupId>
+            <artifactId>alipay-sdk-jar-source</artifactId>
+            <version>${alipay.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.alipay.api</groupId>
+            <artifactId>alipay-sdk-java</artifactId>
+            <version>${alipay.version}</version>
+        </dependency>
+        <!-- 支付宝接口 -->
+        <!-- javaservlet -->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>${javax.servlet.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>jstl</artifactId>
+            <version>${javax.jstl.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-tomcat</artifactId>
+            <version>${spring.boot.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.tomcat.embed</groupId>
+            <artifactId>tomcat-embed-jasper</artifactId>
+            <version>${tomcat.embed.version}</version>
+        </dependency>
+        <!-- log4j依赖 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-websocket</artifactId>
+            <version>${spring.boot.version}</version>
+        </dependency>
+        <!-- log4j依赖 -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>${slf4j-api.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>log4j-over-slf4j</artifactId>
+            <version>${log4j.over.slf4j.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>${log4j.version}</version>
+        </dependency>
+        <!-- log4j依赖 -->
+
+        <!-- 工具包依赖 -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>${fastjson.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>${apache.commons.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-beanutils</groupId>
+            <artifactId>commons-beanutils</artifactId>
+            <version>${commons.beanutils}</version>
+        </dependency>
+        <!-- 工具包依赖 -->
+        <dependency>
+            <groupId>aopalliance</groupId>
+            <artifactId>aopalliance</artifactId>
+            <version>${aopalliance.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+            <version>${aspectjweaver.version}</version>
+        </dependency>
+
+
+        <!-- Spring容器 -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-beans</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jdbc</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <!-- Spring容器 -->
+        <!-- Shiro 服务 -->
+        <dependency>
+            <groupId>org.apache.shiro</groupId>
+            <artifactId>shiro-core</artifactId>
+            <version>${shrio.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.shiro</groupId>
+            <artifactId>shiro-web</artifactId>
+            <version>${shrio.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.shiro</groupId>
+            <artifactId>shiro-ehcache</artifactId>
+            <version>${shrio.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.shiro</groupId>
+            <artifactId>shiro-quartz</artifactId>
+            <version>${shrio.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.shiro</groupId>
+            <artifactId>shiro-spring</artifactId>
+            <version>${shrio.version}</version>
+        </dependency>
+        <!-- Shiro 服务 -->
+
+
+        <!-- Hessian包 -->
+        <dependency>
+            <groupId>com.caucho</groupId>
+            <artifactId>hessian</artifactId>
+            <version>${hessian.version}</version>
+        </dependency>
+        <!-- Hessian包 -->
+
+        <!-- SpringBoot插件 -->
+        <!-- https://mvnrepository.com/artifact/com.github.pagehelper/pagehelper-spring-boot-starter -->
+        <dependency>
+            <groupId>com.github.pagehelper</groupId>
+            <artifactId>pagehelper-spring-boot-starter</artifactId>
+            <version>${spring.boot.pagehelper.version}</version>
+        </dependency>
+        <!-- SpringBoot插件 -->
+
+
+        <!-- SpringBoot整合 -->
+        <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-web -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <version>${spring.boot.version}</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-test -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <version>${spring.boot.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+            <version>${spring.boot.version}</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-security -->
+        <!--<dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+            <version>${spring.boot.version}</version>
+        </dependency>-->
+        <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-devtools -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <version>${spring.boot.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+            <version>${spring.boot.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-log4j</artifactId>
+            <version>${spring.boot.log4j.version}</version>
+        </dependency>
+
+        <!-- SpringBoot整合 -->
+        <!-- -->
+        <!-- SpringBoot整合mysql -->
+        <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>${mysql.connector.version}</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-dbcp2 -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-dbcp2</artifactId>
+            <version>${commons.dbcp2.version}</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.springframework/spring-jdbc -->
+        <!-- SpringBoot整合mysql -->
+
+        <!-- SpringBoot整合mybatis -->
+        <!-- https://mvnrepository.com/artifact/org.mybatis.spring.boot/mybatis-spring-boot-starter -->
+        <dependency>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+            <version>${spring.boot.mybatis.version}</version>
+        </dependency>
+        <!-- SpringBoot整合mybatis -->
+
+
+        <!-- 禧云sdk -->
+        <dependency>
+            <groupId>com.xy.open</groupId>
+            <artifactId>sdk</artifactId>
+            <version>${xy.version}</version>
+        </dependency>
+        <!--极光消息推送-->
+        <dependency>
+            <groupId>cn.jpush.api</groupId>
+            <artifactId>jsms-client</artifactId>
+            <version>${jpush.version}</version>
+        </dependency>
+        <!--极光消息推送-->
+        <!-- 文件上传包 -->
+    </dependencies>
+    </dependencyManagement>
+
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>2.3.2</version>
+                    <configuration>
+                        <source>${jdk.version}</source>
+                        <target>${jdk.version}</target>
+                        <encoding>UTF-8</encoding>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-surefire-plugin</artifactId>
+                    <configuration>
+                        <skip>true</skip>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+
+
+</project>

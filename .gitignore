@@ -1,0 +1,15 @@
+# Project exclude paths
+/test-cacheservice/target/
+/test-client/target/
+/test-commons/target/
+/test-demo/target/
+/test-dto/target/
+/test-fastdfs/target/
+/test-hessianserver/target/
+/test-javarmi/target/
+/test-jni/target/
+/test-kafka/target/
+/test-log4j2/target/
+/test-restfulwebservice/target/
+/test-service-api/target/
+/test-websocket/target/

@@ -1,0 +1,30 @@
+# Server settings
+server:
+  port:  9095
+  address:  0.0.0.0
+
+#关闭默认模板引擎
+spring:
+  thymeleaf:
+    cache:  false
+    enabled:  false
+# HTTP ENCODING
+  http:
+    encoding:
+      force:  true
+      charset:  UTF-8
+      enabled:  true
+
+
+#上传请求最大限制10M
+file:
+  maxRequestUploadSize : 10240
+  #上传单个文件最大限制10M
+  maxSingleUploadSize : 10240
+#照片文件最大限制, 1KB = 1024b
+photo:
+  maxUploadSize : 1048576
+
+logging:
+  config: classpath:logback-spring.xml
+logging.path2:  D:/logs
